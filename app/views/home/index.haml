@@ -4,25 +4,24 @@
 
 %section
   .grid-container
-    .inner-wrapper
-      .home-hero
-        %h1.home-hero-heading
-          Code review tool for GitHub pull requests
-        %p.home-hero-subheading
-          Hound comments on style violations in GitHub pull requests, allowing
-          you and your team to better review and maintain a clean codebase.
+    .home-hero
+      %h1.home-hero-heading
+        Code review tool for GitHub pull requests
+      %p.home-hero-subheading
+        Hound comments on style violations in GitHub pull requests, allowing
+        you and your team to better review and maintain a clean codebase.
 
-        .home-hero-cta
-          = link_to "/auth/github",
-            class: "button button--primary button--large" do
-            %svg.icon.button__icon{ "aria-hidden" => "true" }
-              %use{ "xlink:href" => "/images/icons.svg#github" }
-            = t("authenticate")
+      .home-hero-cta
+        = link_to "/auth/github",
+          class: "button button--primary button--large" do
+          %svg.icon.button__icon{ "aria-hidden" => "true" }
+            %use{ "xlink:href" => "/images/icons.svg#github" }
+          = t("authenticate")
 
     .home-languages
       %h2.home-heading--small.home-languages-heading Currently style checking
 
-      .inner-wrapper
+      .clearfix
         %ul.home-languages-list
           %li.home-languages-list-item
             .home-languages-list-item-logo
@@ -70,7 +69,7 @@
     %h2.home-heading--large.home-importance-heading.section-title
       Why does style matter?
 
-    .inner-wrapper
+    .clearfix
       %article.home-importance-item
         .home-importance-text
           %p.home-heading--small Convention
@@ -140,7 +139,7 @@
         Pricing.
 
     %article.plans
-      .inner-wrapper
+      .clearfix
         %h3.plan-category
           Private Repos
 
