@@ -1,0 +1,7 @@
+.grid-container {
+  @include outer-container;
+}
+
+.grid-container--narrow {
+  max-width: $medium-screen-size;
+}

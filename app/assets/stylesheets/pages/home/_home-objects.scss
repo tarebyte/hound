@@ -1,13 +1,4 @@
 .home {
-  .content {
-    margin: 0;
-    max-width: none;
-  }
-
-  .section-content {
-    @include outer-container;
-  }
-
   .section-title {
     text-align: center;
   }

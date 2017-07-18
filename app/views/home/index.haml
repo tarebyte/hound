@@ -3,7 +3,7 @@
 - content_for :body_class, "home home-index"
 
 %section
-  .section-content
+  .grid-container
     .clearfix
       .home-hero
         %h1.home-hero-heading
@@ -66,7 +66,7 @@
             %p.home-languages-list-item-heading TypeScript
 
 %section.home-importance
-  .section-content
+  .grid-container
     %h2.home-heading--large.home-importance-heading.section-title
       Why does style matter?
 
@@ -97,7 +97,7 @@
             rather than individual developers working independently.
 
 %section.value
-  .section-content
+  .grid-container
     %article.value-section
       .value-text
         %h2.home-heading--large
@@ -119,7 +119,7 @@
       = image_tag "home-page/review_example.png", class: "value-image"
 
 %section.configuration
-  .section-content
+  .grid-container
     %figure.configuration-image
       = image_tag "home-page/guides.png"
     .configuration-text
@@ -134,7 +134,7 @@
         team's needs.
 
 %section.home-pricing
-  .section-content#pricing
+  .grid-container#pricing
     .section-title
       %h2.home-pricing-heading.home-heading--large
         Pricing.
@@ -152,7 +152,7 @@
         = render(partial: @home.open_source_plans, as: :plan)
 
 %section.home-security
-  .section-content
+  .grid-container
     %article
       %h2.home-heading--small
         Uncomfortable giving us access to your code?
